@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active" style="background-image: url({% static 'assets/img/slide/slide-1.jpg' %});">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>Expert <span> Electronic Device </span> Repairs</h2>
+              <p>At Ganapati Shopee, we pride ourselves on delivering expert repairs for all your electronic gadgets. Our skilled technicians are well-equipped to handle a wide range of devices, from smartphones and laptops to household appliances</p>
+              <div class="text-center"><a href="{% url 'about' %}" class="btn-get-started">About Not Secure</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url({% static 'assets/img/slide/slide-2.jpg' %});">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>Affordable Services</h2>
+              <p>We understand the value of your hard-earned money, which is why we offer top-quality repairs at small charges. Our goal is to provide cost-effective solutions without compromising on the quality of our workmanship</p>
+              <div class="text-center"><a href="{% url 'service' %}" class="btn-get-started">Our Service</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url({% static 'assets/img/slide/slide-3.jpg' %});">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2><span>Trusted </span> and <span> Reliable</span></h2>
+              <p>With years of experience and a dedicated team, Ganapati Shopee has earned the trust of our customers. You can rely on us for timely service, genuine spare parts, and a transparent repair process</p>
+              <div class="text-center"><a href="{% url 'service' %}" class="btn-get-started">Our Service</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-left-arrow" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-right-arrow" aria-hidden="true"></span>
+      </a>
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+    </div>
+  </section>
+  <main id="main">
+    <section id="cta" class="cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3><span>Trusted Destination </span> for Electronic Device Repairs</h3>
+            <p> "Where your gadgets find a second life - Ganapati Shopee, restoring technology with care and precision, backed by over 4 years of trusted experience."</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="{% url 'contact' %}">Quick Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="clients" class="clients">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Your <strong> Advice </strong> is also <strong> Important </strong> for Us</h2>
+          <p>We Respect Your Opinion , Please be honest and give Constructive Critisim to Make Us  Better , Stonger </p>
+        </div>
+  </main>
+{% endblock %}
